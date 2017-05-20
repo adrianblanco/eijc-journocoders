@@ -4,7 +4,7 @@
 
 Virtual reality is in tons of conversations of journalism but very few media have really tested this technology.
 
-In this session we will review some of the examples out of there, take a look to some of the most interesting tutorials and will put our hands on one interesting tutorial during the session..
+In this session we will review some of the examples out of there, take a look to some of the most interesting tutorials and will put our hands on an interesting tutorial during the session.
 
 ## First steps: What you will learn
 
@@ -47,11 +47,9 @@ To check that everything is working, go to your local server 8000 [http://localh
 
 ### LA TIMES vr interactive three.js
 
-In this tutorial you'll learn how we used NASA satellite imagery and elevation data to create a 3-D rendering of the [Gale Crater](http://graphics.latimes.com/mars-gale-crater-vr/) on Mars.
+In this tutorial you'll learn how La Times used NASA satellite imagery and elevation data to create a 3-D rendering of the [Gale Crater](http://graphics.latimes.com/mars-gale-crater-vr/) on Mars.
 
 To follow the tutorial go to [their repository](https://github.com/datadesk/vr-interactives-three-js).
-
-You can check the code commented by Journocoeers.
 
 ### WSJ virtual reality data visualization
 
@@ -59,7 +57,7 @@ In this tutorial you can learn how to create virtual reality charts. It is writt
 
 To follow the tutorial go to [this article](http://www.storybench.org/how-to-make-a-simple-virtual-reality-data-visualization/) .
 
-You can check the code commented by Journocoeers.
+You can also check the code commented by Journocoders below.
 
 ### Building VR with A-frame
 A-frame is a web framework for building virtual reality experiences. Simpler than the ones above, another way to start in VR.
@@ -70,25 +68,21 @@ To follow the tutorial go to [this presentation](https://belen-albeza.github.io/
 
 We are going to follow the WSJ's tutorial to build our VR example.
 
-First of all, these are the assets we need to create it:
-* Three.js
-* VR controls
-* webVR manager
-* polyfill
+You can download the contents for the tutorial [here](https://drive.google.com/file/d/0B4pA3-IiW9WUaGxxN00zNlBaeGM/view?usp=sharing).
+
+First of all, these are the assets we need to start building it:
+* [Three.js](https://threejs.org/docs/index.html#manual/introduction/Creating-a-scene)
+* [OrbitControls](https://www.npmjs.com/package/orbit-controls)
+* [Typeface](http://blog.andrewray.me/creating-a-3d-font-in-three-js/)
+* [D3](https://d3js.org)
 
 ```bash
-</script>
 
-<script src="js/es6-promise.min.js"></script>
-<script src="js/three.min.js"></script>
-<script src="js/three.flycontrols.js"></script>
-<script src="js/three.terrainloader.js"></script>
-<script src="js/VRControls.js"></script>
-<script src="js/VREffect.js"></script>
-<script src="js/webvr-polyfill.js"></script>
-<script src="js/webvr-manager.js"></script>
-
-<script>
+<script src="js/third-party/threejs/three.js"></script>
+<script src="js/third-party/threejs/OrbitControls.js"></script>
+<script src="js/optimer_bold.typeface.js"></script>
+<script src="js/optimer_regular.typeface.js"></script>
+<script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
 
 ```
 
@@ -273,7 +267,7 @@ In three.js, we build the 3D environment in which we will insert the code.
 
 Yes, it's too long, but do not panic, you only have to have an idea of it.
 
-After, that we build our D3 graphic. Take a look of the code commented: 
+After, that we build our D3 graphic. Take a look of the code commented:
 
 ```
 
@@ -363,4 +357,6 @@ After, that we build our D3 graphic. Take a look of the code commented:
 
 ```
 
-lsdlsd
+Voilà! You should see something like this at :
+
+<img src="img/finished.png" alt="alt text" width="900">
