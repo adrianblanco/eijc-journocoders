@@ -270,7 +270,6 @@ Yes, it's too long, but do not panic, you only have to have an idea of it.
 After, that we build our D3 graphic. Take a look of the code commented:
 
 ```
-<script>
 
 /////// D3 CONTENT STARTS HERE ////////
 
@@ -356,7 +355,6 @@ After, that we build our D3 graphic. Take a look of the code commented:
 
  /////// D3 CONTENT FINISHES HERE ////////
 
- </script>
 
 ```
 
